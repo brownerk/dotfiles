@@ -1,0 +1,5 @@
+- brewfile:
+    file: configs/work/Brewfile
+    no-upgrade: true
+    stdout: true
+    stderr: true

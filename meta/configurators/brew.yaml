@@ -1,5 +1,5 @@
 - brewfile:
-    file: os/macos/Brewfile
+    file: configs/os/macos/Brewfile
     no-upgrade: true
     stdout: true
     stderr: true

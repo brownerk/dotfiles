@@ -1,0 +1,4 @@
+- link:
+    # Terminal:
+    ~/.bash_profile: configs/shell/bash_profile
+    ~/.bashrc: configs/shell/bashrc

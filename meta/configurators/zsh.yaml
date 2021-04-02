@@ -8,5 +8,5 @@
 - link:
     # Terminal:
     ~/.zshrc:
-      path: shell/zshrc
+      path: configs/shell/zshrc
       force: true
