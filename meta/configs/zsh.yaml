@@ -4,3 +4,9 @@
 #      quiet: true
       stdout: true
 #      stderr: true
+
+- link:
+    # Terminal:
+    ~/.zshrc:
+      path: shell/zshrc
+      force: true

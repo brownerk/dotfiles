@@ -4,6 +4,7 @@
 #      quiet: true
       stdout: true
 #      stderr: true
+
 - link:
     ~/.tmux.conf.local:
         path: tmux/tmux.conf.local

@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# `.external` handles all external tools.
+#
+# This file is used as a part of `.shell/env`
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+
+# === Version managers ===
+eval "$(pyenv init -)"

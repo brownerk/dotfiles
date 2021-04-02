@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# include brew bins
+export PATH="/usr/local/bin:$PATH"

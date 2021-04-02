@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# === Shell stuff ===
+
+source "$HOME/.shell/exports"
+source "$HOME/.shell/aliases"
+source "$HOME/.shell/functions"
+source "$HOME/.shell/external"
+
+
+# === Local variables and overrides ===
+
+if [[ -f "$HOME/.shell/local" ]]; then
+  source "$HOME/.shell/local"
+fi

@@ -1,0 +1,5 @@
+- link:
+    # Terminal:
+    ~/.shell:
+      path: shell/stuff
+      create: true
