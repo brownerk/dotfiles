@@ -4,7 +4,8 @@
       path: configs/shell/stuff
       create: true
     # Git:
-    ~/.gitconfig: configs/git/gitconfig
+    # TODO: prepare gitconfig
+    # ~/.gitconfig: configs/git/gitconfig
     ~/.gitignore_global: configs/git/gitignore
     ~/.gitattributes_global: configs/git/gitattributes
     # Tools:
