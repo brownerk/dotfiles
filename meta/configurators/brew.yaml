@@ -7,6 +7,3 @@
 
 - brewfile:
     file: configs/os/macos/Brewfile
-    no-upgrade: true
-    stdout: true
-    stderr: true

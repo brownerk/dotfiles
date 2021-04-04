@@ -1,5 +1,9 @@
 - defaults:
     link:
-        relink: true
+      relink: true
+    brewfile:
+      no-upgrade: true
+      stdout: true
+      stderr: true
 
 - clean: ["~"]
