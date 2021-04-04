@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+# === ZSH Plugins management ===
+
+ZPLUG_HOME='/usr/local/opt/zplug'
+export ZPLUG_HOME
+source "$HOME/.zplugrc"
+
 # === Shell stuff ===
 
 source "$HOME/.shell/exports"

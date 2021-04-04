@@ -1,8 +1,20 @@
+- shell:
+    - command: test ! -e $HOME/.ssh/id_rsa.pub && ssh-keygen -f $HOME/.ssh/id_rsa -t rsa || echo "SSH-key exists, skipping generation"
+      description: generate SSH keys
+      quiet: true
+      stdin: true
+      stdout: true
+      stderr: true
+
+- create:
+    - ~/.nano-backups
+
 - link:
     # Terminal:
     ~/.shell:
       path: configs/shell/stuff
       create: true
+    ~/.zplugrc: configs/tools/zplugrc
     # Git:
     # TODO: prepare gitconfig
     # ~/.gitconfig: configs/git/gitconfig
@@ -13,6 +25,8 @@
     # Editors:
     ~/.editorconfig: configs/tools/editorconfig
     ~/.nanorc: configs/tools/nanorc
+    ~/.nano-backups:
+      create: true
     # SSH:
     ~/.ssh/config:
       path: configs/ssh/config
