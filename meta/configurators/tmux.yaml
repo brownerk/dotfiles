@@ -2,8 +2,8 @@
     - command: test ! -d ~/.tmux && git clone https://github.com/gpakosz/.tmux.git ~/.tmux || cd ~/.tmux; git pull; echo "Oh My Tmux already installed, skipping installation"
       description: Clone Oh My Tmux
       quiet: true
-#      stdout: true
-#      stderr: true
+      stdout: true
+      stderr: true
 
 - link:
     ~/.tmux.conf.local:

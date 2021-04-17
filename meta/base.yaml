@@ -1,6 +1,10 @@
 - defaults:
     link:
       relink: true
+    shell:
+      quiet: true
+      stdout: true
+      stderr: true
     brewfile:
       no-upgrade: true
       stdout: true
