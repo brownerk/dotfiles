@@ -1,4 +1,8 @@
 - link:
     # Terminal:
-    ~/.bash_profile: configs/shell/bash_profile
-    ~/.bashrc: configs/shell/bashrc
+    ~/.bash_profile:
+      path: configs/shell/bash_profile
+      if: '[ `uname` = Darwin ]'
+    ~/.bashrc:
+      path: configs/shell/bashrc
+      if: '[ `uname` = Darwin ]'
