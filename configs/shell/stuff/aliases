@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# `aliases` is used to provide custom variables.
+#
+# This file is used as a part of `.shell/env`
+
+
+# === Aliases ===
+
+# Prettiest ls alternative
+alias la="exa -abghl --git --color=automatic"
+
+if [[ uname == 'Darwin' ]]; then
+  # Lock the screen (when going AFK)
+  alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+fi
+
+# Copy public key to clipboard:
+alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"

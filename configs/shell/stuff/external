@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# `external` handles all external tools.
+#
+# This file is used as a part of `.shell/env`
+
+# === Version managers ===
+if [ $(command -v pyenv) ]; then
+  eval "$(pyenv init -)"
+fi

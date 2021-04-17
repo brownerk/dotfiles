@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+set -e
+
+BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+
+cd "${BASE_DIR}"
+git submodule update --init --recursive --remote
+
+
+OS_DIR="os/macos"
+PROFILE="${OS_DIR}/profile"
+
+while IFS= read -r configurator; do
+    CONFIGURATORS+=" ${configurator}"
+done < "${PROFILE}"
+
+
+META_DIR="meta"
+
+BASE_CONFIGURATOR="${BASE_DIR}/${META_DIR}/base.yaml"
+
+PACKAGE_MANAGER_PLUGIN="${OS_DIR}/dotbot-brewfile"
+
+DOTBOT_DIR="dotbot"
+DOTBOT_BIN="bin/dotbot"
+
+
+for config in ${CONFIGURATORS}; do
+    echo -e "\nConfigure $config"
+    # create temporary file
+    configFile="$(mktemp)"
+    CONFIGURATOR="${BASE_DIR}/${META_DIR}/configurators/${config}.yaml"
+
+    echo -e "$(<$BASE_CONFIGURATOR)\n$(<$CONFIGURATOR)" > "$configFile"
+
+    cmd=("${BASE_DIR}/${META_DIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" --plugin-dir ${PACKAGE_MANAGER_PLUGIN} -c "$configFile")
+
+    "${cmd[@]}"
+    rm -f "$configFile"
+done
+
+cd "${BASE_DIR}"

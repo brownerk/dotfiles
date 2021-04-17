@@ -1,0 +1,6 @@
+- shell:
+    - command: command -v brew && ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null || echo "Brew already installed, skipping installation"
+      description: Install Brew
+
+- brewfile:
+    file: os/macos/Brewfile

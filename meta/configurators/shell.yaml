@@ -1,0 +1,19 @@
+- create:
+    - ~/.nano-backups
+
+- link:
+    # Terminal:
+    ~/.shell:
+      path: configs/shell/stuff
+      create: true
+    ~/.zplugrc: configs/tools/zplugrc
+    # Git:
+    # TODO: prepare gitconfig
+    # ~/.gitconfig: configs/git/gitconfig
+    ~/.gitignore_global: configs/git/gitignore
+    ~/.gitattributes_global: configs/git/gitattributes
+    # Tools:
+    ~/.psqlrc: configs/tools/psqlrc
+    # Editors:
+    ~/.editorconfig: configs/tools/editorconfig
+    ~/.nanorc: configs/tools/nanorc

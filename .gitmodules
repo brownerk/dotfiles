@@ -1,0 +1,12 @@
+[submodule "meta/dotbot"]
+	path = meta/dotbot
+	url = https://github.com/anishathalye/dotbot
+[submodule "os/macos/dotbot-brewfile"]
+	path = os/macos/dotbot-brewfile
+	url = https://github.com/sobolevn/dotbot-brewfile.git
+[submodule "os/ubuntu/dotbot-aptget"]
+	path = os/ubuntu/dotbot-aptget
+	url = https://github.com/dein0s/dotbot_plugin_aptget.git
+[submodule "os/centos/dotbot-yum"]
+	path = os/centos/dotbot-yum
+	url = https://gitlab.com/flyingchipmunk/dotbot-yum.git
