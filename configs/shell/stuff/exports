@@ -11,7 +11,7 @@ export HISTSIZE=10000
 export HISTFILESIZE=10000
 
 
-if [ `uname` = Darwin ]
+if [[ `uname` = Darwin ]]; then
 
 
 # === PATH modifications ===
