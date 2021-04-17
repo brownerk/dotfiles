@@ -1,3 +1,4 @@
 - yum:
     zsh:
-      options: ' -y --disablerepo=* --enablerepo=mainline --enablerepo=mainline-extra'
+      options: "-y"
+#      options: ' -y --disablerepo=* --enablerepo=mainline --enablerepo=mainline-extra'
