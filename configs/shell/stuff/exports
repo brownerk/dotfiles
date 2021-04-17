@@ -14,7 +14,7 @@ export HISTFILESIZE=10000
 if [[ `uname` = Darwin ]]; then
 
 
-# === PATH modifications ===
+  # === PATH modifications ===
 
   # Adds `poetry` binary, should be added to the end:
   PATH="$HOME/.poetry/bin:$PATH"
@@ -26,9 +26,9 @@ if [[ `uname` = Darwin ]]; then
   export PATH
 
 
-# === General ===
+  # === General ===
 
-# Homebrew:
+  # Homebrew:
   export HOMEBREW_NO_ANALYTICS=1  # disables statistics that brew collects
 
 
