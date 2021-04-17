@@ -2,7 +2,5 @@
     # Terminal:
     ~/.bash_profile:
       path: configs/shell/bash_profile
-      if: '[ `uname` = Darwin ]'
     ~/.bashrc:
       path: configs/shell/bashrc
-      if: '[ `uname` = Darwin ]'

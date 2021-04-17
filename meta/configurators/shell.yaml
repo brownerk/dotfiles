@@ -30,4 +30,3 @@
       path: configs/ssh/config
       force: true
       create: true
-#      if: '[ `uname` = Darwin ]'
