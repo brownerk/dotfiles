@@ -8,7 +8,7 @@ cd "${BASE_DIR}"
 git submodule update --init --recursive --remote
 
 
-OS_DIR="os/macos"
+OS_DIR="os/ubuntu"
 PROFILE="${OS_DIR}/profile"
 
 while IFS= read -r configurator; do
@@ -20,7 +20,7 @@ META_DIR="meta"
 
 BASE_CONFIGURATOR="${BASE_DIR}/${META_DIR}/base.yaml"
 
-PACKAGE_MANAGER_PLUGIN="${OS_DIR}/dotbot-brewfile"
+PACKAGE_MANAGER_PLUGIN="${OS_DIR}/dotbot-aptget"
 
 DOTBOT_DIR="dotbot"
 DOTBOT_BIN="bin/dotbot"
