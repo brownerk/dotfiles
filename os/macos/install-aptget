@@ -20,6 +20,8 @@ META_DIR="meta"
 
 BASE_CONFIGURATOR="${BASE_DIR}/${META_DIR}/base.yaml"
 
+PACKAGE_MANAGER_PLUGIN="${OS_DIR}/dotbot-brewfile"
+
 DOTBOT_DIR="dotbot"
 DOTBOT_BIN="bin/dotbot"
 
@@ -33,7 +35,7 @@ for config in ${CONFIGURATORS}; do
 
     echo -e "$(<$BASE_CONFIGURATOR)\n$(<$CONFIGURATOR)" > "$configFile"
 
-    cmd=("${BASE_DIR}/${META_DIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" -c "$configFile")
+    cmd=("${BASE_DIR}/${META_DIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" --plugin-dir ${PACKAGE_MANAGER_PLUGIN} -c "$configFile")
 
     if [[ $config == *"sudo"* ]]; then
         cmd=(sudo "${cmd[@]}")
