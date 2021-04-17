@@ -11,7 +11,7 @@
       stderr: true
     yum:
       options: "-q -y"
-        stdout: true
-        stderr: false
+      stdout: true
+      stderr: false
 
 - clean: ["~"]
