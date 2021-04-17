@@ -5,4 +5,6 @@
 # This file is used as a part of `.shell/env`
 
 # === Version managers ===
-eval "$(pyenv init -)"
+if [[ command -v pyenv ]]]
+  eval "$(pyenv init -)"
+fi
