@@ -11,8 +11,8 @@
       upgrade: true
     tmux:
       upgrade: true
-    libpq-dev: {}
-    python-dev: {}
+#    libpq-dev: {}
+#    python-dev: {}
     pgcli:
       upgrade: true
     zsh:
