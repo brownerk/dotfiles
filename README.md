@@ -10,9 +10,9 @@ I use MacOS as main workstation and Ubuntu, CentOS as servers.
 
 ## Structure
 
-- [`configs`](https://github.com/egorvdot/dotfiles/tree/issue-0-init/configs) - dotfiles for utilities.
-- [`meta`](https://github.com/egorvdot/dotfiles/tree/issue-0-init/meta) - dotbot and its configs for configuring utilities.
-- [`os`](https://github.com/egorvdot/dotfiles/tree/issue-0-init/os) - environment initializers for OS-es.
+- [`configs`](https://github.com/egorvdot/dotfiles/tree/issue-0-init/configs) - dotfiles for utilities
+- [`meta`](https://github.com/egorvdot/dotfiles/tree/issue-0-init/meta) - dotbot and its configs for configuring utilities
+- [`os`](https://github.com/egorvdot/dotfiles/tree/issue-0-init/os) - environment initializers for OS-es
 
 Environment initializer uses `profile` with the list of dotbot's configs.
 
