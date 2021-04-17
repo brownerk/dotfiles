@@ -9,5 +9,9 @@
       no-upgrade: true
       stdout: true
       stderr: true
+    yum:
+      options: "-q -y"
+        stdout: False
+        stderr: True
 
 - clean: ["~"]
