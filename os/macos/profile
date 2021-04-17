@@ -1,5 +1,6 @@
 brew
 tmux
 zsh
-shell
 bash
+shell
+ssh

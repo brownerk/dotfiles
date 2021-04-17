@@ -1,0 +1,13 @@
+- shell:
+    - command: test ! -e $HOME/.ssh/id_rsa.pub && ssh-keygen -f $HOME/.ssh/id_rsa -t rsa || echo "SSH-key exists, skipping generation"
+      description: generate SSH keys
+      quiet: true
+      stdin: true
+      stdout: true
+      stderr: true
+
+- link:
+    ~/.ssh/config:
+      path: configs/ssh/config
+      force: true
+      create: true
