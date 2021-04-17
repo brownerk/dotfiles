@@ -12,6 +12,6 @@
     yum:
       sudo: True
       stdout: true
-      stderr: false
+      stderr: true
 
 - clean: ["~"]
