@@ -2,9 +2,11 @@
 
 # === ZSH Plugins management ===
 
-ZPLUG_HOME='/usr/local/opt/zplug'
-export ZPLUG_HOME
-source "$HOME/.zplugrc"
+if [ uname == 'Darwin' ]
+  ZPLUG_HOME='/usr/local/opt/zplug'
+  export ZPLUG_HOME
+  source "$HOME/.zplugrc"
+fi
 
 # === Shell stuff ===
 
