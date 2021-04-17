@@ -1,4 +1,5 @@
 - yum:
     zsh:
-      options: "-y"
+#      options: "-y"
 #      options: ' -y --disablerepo=* --enablerepo=mainline --enablerepo=mainline-extra'
+      options: ' -y --disablerepo=cuda-10-0-local-10.0.130-410.48'
