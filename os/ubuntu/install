@@ -35,7 +35,11 @@ for config in ${CONFIGURATORS}; do
 
     echo -e "$(<$BASE_CONFIGURATOR)\n$(<$CONFIGURATOR)" > "$configFile"
 
-    cmd=("${BASE_DIR}/${META_DIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" --plugin-dir ${PACKAGE_MANAGER_PLUGIN} -c "$configFile")
+    if [[ $config == *"aptget"* ]]; then
+        cmd=("${BASE_DIR}/${META_DIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" --plugin-dir ${PACKAGE_MANAGER_PLUGIN} -c "$configFile")
+    else
+        cmd=("${BASE_DIR}/${META_DIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" -c "$configFile")
+    fi
 
     if [[ $config == *"sudo"* ]]; then
         cmd=(sudo "${cmd[@]}")
