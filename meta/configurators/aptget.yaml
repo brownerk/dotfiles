@@ -1,7 +1,19 @@
 - aptget:
-    htop:
-      upgrade: true
     curl:
       upgrade: true
+    git:
+      upgrade: true
+    htop:
+      upgrade: true
+    httpie:
+      upgrade: true
+    tig:
+      upgrade: true
     tmux:
+      upgrade: true
+    libpq-dev:
+    python-dev:
+    pgcli:
+      upgrade: true
+    zsh:
       upgrade: true
