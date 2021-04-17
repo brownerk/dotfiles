@@ -7,3 +7,6 @@
 [submodule "os/ubuntu/dotbot-aptget"]
 	path = os/ubuntu/dotbot-aptget
 	url = https://github.com/dein0s/dotbot_plugin_aptget.git
+[submodule "os/centos/dotbot-yum"]
+	path = os/centos/dotbot-yum
+	url = https://gitlab.com/flyingchipmunk/dotbot-yum.git
