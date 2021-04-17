@@ -4,11 +4,5 @@
     zsh: {}
 
 - shell:
-    - cd ~
-    - git clone https://github.com/tmux/tmux.git
-    - cd tmux
-    - git checkout 3.2
-    - sh autogen.sh
-    - ./configure && make
-#    - && sudo make install
+    command: cd ~ && git clone https://github.com/tmux/tmux.git && cd tmux && git checkout 3.2 && sh autogen.sh && ./configure && make # && sudo make install
     description: Install tmux 3.2
