@@ -2,4 +2,4 @@
     zsh:
 #      options: "-y"
 #      options: ' -y --disablerepo=* --enablerepo=mainline --enablerepo=mainline-extra'
-      options: ' -y --disablerepo=cuda-10-0-local-10.0.130-410.48'
+      options: ' -y --disablerepo=cuda-10-0-local-10.0.130-410.48 --disablerepo=cuda-10-1-local-10.1.243-418.87.00'
