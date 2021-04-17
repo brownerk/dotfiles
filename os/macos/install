@@ -30,16 +30,11 @@ for config in ${CONFIGURATORS}; do
     echo -e "\nConfigure $config"
     # create temporary file
     configFile="$(mktemp)"
-    suffix="-sudo"
-    CONFIGURATOR="${BASE_DIR}/${META_DIR}/configurators/${config%"$suffix"}.yaml"
+    CONFIGURATOR="${BASE_DIR}/${META_DIR}/configurators/${config}.yaml"
 
     echo -e "$(<$BASE_CONFIGURATOR)\n$(<$CONFIGURATOR)" > "$configFile"
 
     cmd=("${BASE_DIR}/${META_DIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" --plugin-dir ${PACKAGE_MANAGER_PLUGIN} -c "$configFile")
-
-    if [[ $config == *"sudo"* ]]; then
-        cmd=(sudo "${cmd[@]}")
-    fi
 
     "${cmd[@]}"
     rm -f "$configFile"
