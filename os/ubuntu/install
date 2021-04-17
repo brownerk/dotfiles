@@ -20,7 +20,7 @@ META_DIR="meta"
 
 BASE_CONFIGURATOR="${BASE_DIR}/${META_DIR}/base.yaml"
 
-PACKAGE_MANAGER_PLUGIN="${OS_DIR}/dotbot-brewfile"
+PACKAGE_MANAGER_PLUGIN="${OS_DIR}/dotbot-aptget"
 
 DOTBOT_DIR="dotbot"
 DOTBOT_BIN="bin/dotbot"
