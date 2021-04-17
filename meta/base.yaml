@@ -11,6 +11,7 @@
       stderr: true
     yum:
       options: "-q -y"
+      sudo: True
       stdout: true
       stderr: false
 
