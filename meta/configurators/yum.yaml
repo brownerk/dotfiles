@@ -7,5 +7,5 @@
     automake: {}
 
 - shell:
-    - command:  command -v tmux && test "$(tmux -V | cut -d ' ' -f 2 | grep -R '3.*')" && echo "$(tmux -V) already installed" || "tmux 1.8" && tmux  cd ~ && git clone https://github.com/tmux/tmux.git && cd tmux && git checkout 3.2 && sh autogen.sh && ./configure && make && sudo make install
+    - command: command -v tmux && test "$(tmux -V | cut -d ' ' -f 2 | grep -R '3.*')" && echo "$(tmux -V) already installed" || cd ~ && git clone https://github.com/tmux/tmux.git && cd tmux && git checkout 3.2 && sh autogen.sh && ./configure && make && sudo make install
       description: Install tmux 3.2
