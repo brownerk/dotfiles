@@ -10,6 +10,7 @@
       stdout: true
       stderr: true
     yum:
+      options: '-y --disablerepo=cuda-10-0-local-10.0.130-410.48 --disablerepo=cuda-10-1-local-10.1.243-418.87.00 --disablerepo=nv-tensorrt-cuda10.1-trt6.0.1.5-ga-20190913'
       sudo: True
       stdout: true
       stderr: true
