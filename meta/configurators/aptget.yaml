@@ -1,10 +1,4 @@
 - aptget:
-    python-dev:
-      ppa: ppa:deadsnakes/ppa
-    libpq-dev: {}
-    libevent-dev: {}
-
-- aptget:
     curl:
       upgrade: true
     git:
