@@ -18,6 +18,7 @@ Environment initializer uses `profile` with the list of dotbot's configs.
 
 
 ## Installation
+
 I am using [`dotbot`](https://github.com/anishathalye/dotbot/)
 to set things up.
 

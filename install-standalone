@@ -24,7 +24,7 @@ for config in ${@}; do
 
     echo -e "$(<$BASE_CONFIGURATOR)\n$(<$CONFIGURATOR)" > "$configFile"
 
-    cmd=("${BASE_DIR}/${META_DIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" --plugin-dir ${PACKAGE_MANAGER_PLUGIN} -c "$configFile")
+    cmd=("${BASE_DIR}/${META_DIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" -c "$configFile")
 
     if [[ $config == *"sudo"* ]]; then
         cmd=(sudo "${cmd[@]}")
