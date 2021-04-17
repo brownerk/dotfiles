@@ -1,5 +1,5 @@
 - yum:
-    curl: { }
+    curl: {}
     tmux: {}
     wget: {}
     zsh: {}
