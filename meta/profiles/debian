@@ -1,4 +1,4 @@
-brew
+aptget
 tmux
 zsh
 shell

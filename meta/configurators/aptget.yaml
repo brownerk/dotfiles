@@ -1,0 +1,7 @@
+- aptget:
+    htop:
+      upgrade: true
+    curl:
+      upgrade: true
+    tmux:
+      upgrade: true
