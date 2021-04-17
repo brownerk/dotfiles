@@ -1,4 +1,10 @@
 - aptget:
+    python-dev:
+      ppa: ppa:deadsnakes/ppa
+    libpq-dev: {}
+    libevent-dev: {}
+
+- aptget:
     curl:
       upgrade: true
     git:
@@ -7,9 +13,13 @@
       upgrade: true
     httpie:
       upgrade: true
+    pgcli:
+      upgrade: true
     tig:
       upgrade: true
     tmux:
+      upgrade: true
+    wget:
       upgrade: true
     zsh:
       upgrade: true
