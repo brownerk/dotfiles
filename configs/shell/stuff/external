@@ -6,5 +6,9 @@
 
 # === Version managers ===
 if [ $(command -v pyenv) ]; then
-  eval "$(pyenv init -)"
+  if [[ `uname` = Darwin ]]; then
+    eval "$(pyenv init -)"
+  else
+    eval "$(pyenv init --path)"
+  fi
 fi
