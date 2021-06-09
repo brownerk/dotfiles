@@ -8,9 +8,8 @@
 if [ $(command -v pyenv) ]; then
   if [[ `uname` = Darwin ]]; then
     eval "$(pyenv init -)"
-    eval "$(pyenv virtualenv-init -)"
   else
     eval "$(pyenv init --path)"
-    eval "$(pyenv virtualenv-init -)"
   fi
+  eval "$(pyenv virtualenv-init -)"
 fi
