@@ -19,7 +19,7 @@ else
     echo "venv was recreated"
     source venv/bin/activate
     echo "venv was activated"
-    pip install pyyaml
+    pip install pyyaml python-apt
     echo "pyyaml was installed"
 fi
 if [[ $(which python) != *"dotfiles/venv"* ]]; then
