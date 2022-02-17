@@ -5,28 +5,6 @@ set -e
 BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 cd "${BASE_DIR}"
-
-if [[ $(which python) == *"dotfiles/venv"* ]]; then
-    echo "venv was already activated"
-elif test -f "venv/bin/activate"; then
-    source venv/bin/activate
-fi
-if [[ $(which python) == *"dotfiles/venv"* ]]; then
-    echo "venv was activated"
-else
-    rm -rf ./venv
-    python3 -m venv venv || sudo apt install -y python3-venv || rm -rf ./venv || python3 -m venv venv
-    echo "venv was recreated"
-    source venv/bin/activate
-    echo "venv was activated"
-    pip install pyyaml python-apt
-    echo "pyyaml was installed"
-fi
-if [[ $(which python) != *"dotfiles/venv"* ]]; then
-    echo "throw up your mac"
-    exit
-fi
-
 git submodule update --init --recursive --remote
 
 
