@@ -1,6 +1,8 @@
 - shell:
     - command: (! command -v brew) && ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null || echo "Brew already installed, skipping installation"
       description: Install Brew
+    - command: mkdir -p $HOME/tmp && cd $HOME/tmp && git clone https://github.com/powerline/fonts.git --depth=1 && cd fonts && ./install.sh && cd .. && rm -rf fonts
+      description: Install Powerline Fonts
 
 - brewfile:
     file: os/macos/Brewfile

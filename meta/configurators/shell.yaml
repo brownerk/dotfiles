@@ -1,5 +1,6 @@
 - create:
     - ~/.nano-backups
+    - ~/tmp
 
 - link:
     # Terminal:

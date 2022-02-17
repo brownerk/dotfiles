@@ -25,8 +25,7 @@ to set things up.
 Steps for initializing of environment:
 
 1. Clone this repo
-2. `cd` into `os/<os name>` folder
-3. Run: `./install`
+2. Run: `./install-macos` or `./install-ubuntu`
 
 Steps for the installation custom configuration:
 
@@ -34,3 +33,4 @@ Steps for the installation custom configuration:
 2. Run `./install-standalone <configurator-name> ...`
 
    For example, `./install-standalone dotbot` updates all submodules of this repository.
+   Option doesn't work with dotbot plugins (aptget, yum, etc) now.

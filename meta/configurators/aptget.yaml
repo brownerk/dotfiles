@@ -5,11 +5,9 @@
       upgrade: true
     htop:
       upgrade: true
-    httpie:
-      upgrade: true
     pgcli:
       upgrade: true
-    tig:
+    fonts-powerline:
       upgrade: true
     tmux:
       upgrade: true
@@ -17,3 +15,7 @@
       upgrade: true
     zsh:
       upgrade: true
+    # httpie:
+    #   upgrade: true
+    # tig:
+    #   upgrade: true
