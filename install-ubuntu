@@ -15,7 +15,7 @@ if [[ $(which python) == *"dotfiles/venv"* ]]; then
     echo "venv was activated"
 else
     rm -rf ./venv
-    python3 -m venv venv || sudo apt install -y python3-venv || python3 -m venv venv
+    python3 -m venv venv || sudo apt install -y python3-venv || rm -rf ./venv || python3 -m venv venv
     echo "venv was recreated"
     source venv/bin/activate
     echo "venv was activated"
