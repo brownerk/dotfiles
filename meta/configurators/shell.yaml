@@ -7,7 +7,6 @@
     ~/.shell:
       path: configs/shell/stuff
       create: true
-    # ~/.zplugrc: configs/tools/zplugrc
     # Git:
     # TODO: prepare gitconfig
     # ~/.gitconfig: configs/git/gitconfig
