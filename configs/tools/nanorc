@@ -1,19 +1,15 @@
 # Settings for `nano` editor
 # Full list of settings might be shown via `man nano`
-# or here: https://www.nano-editor.org/dist/v3/nanorc.5.html
+# or here: https://www.nano-editor.org/dist/v6/nanorc.5.html
 
 # Editor:
-set morespace
-
 set tabstospaces
 set trimblanks
 
 set softwrap
 set atblanks
 set constantshow
-
-# UX:
-set smooth
+set linenumbers
 
 # Extra files:
 set backup

@@ -1,13 +1,5 @@
 #!/usr/bin/env bash
 
-# === ZSH Plugins management ===
-
-if [[ uname == 'Darwin' ]]; then
-  ZPLUG_HOME='/usr/local/opt/zplug'
-  export ZPLUG_HOME
-  source "$HOME/.zplugrc"
-fi
-
 # === Shell stuff ===
 
 source "$HOME/.shell/exports"

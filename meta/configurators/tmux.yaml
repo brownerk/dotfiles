@@ -7,8 +7,8 @@
 
 - link:
     ~/.tmux.conf.local:
-        path: configs/tmux/tmux.conf.local
-        force: true
+      path: configs/tmux/tmux.conf.local
+      force: true
     ~/.tmux.conf:
-        path: ~/.tmux/.tmux.conf
-        force: true
+      path: ~/.tmux/.tmux.conf
+      force: true
