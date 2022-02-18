@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sudo apt list | grep python-apt -q && sudo apt install -y python-apt
+sudo apt list | grep python-apt -q || sudo apt install -y python-apt
 
 set -e
 
