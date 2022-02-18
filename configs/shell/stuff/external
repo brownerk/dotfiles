@@ -4,8 +4,16 @@
 #
 # This file is used as a part of `.shell/env`
 
-# === Version managers ===
-if [ $(command -v pyenv) ]; then
-  eval "$(pyenv init --path)"
-  eval "$(pyenv virtualenv-init -)"
+# === Linux ===
+if [[ `uname` != Darwin ]]; then
+  if [ $(command -v pyenv) ]; then
+    eval "$(pyenv init --path)"
+    eval "$(pyenv virtualenv-init -)"
+  fi
+fi
+
+
+# === MacOS ===
+if [[ `uname` = Darwin ]]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 fi

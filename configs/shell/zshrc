@@ -83,6 +83,7 @@ plugins=(
     kubectl
 )
 
+export ZSH_DISABLE_COMPFIX=true
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -103,8 +104,6 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-
-eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Custom envs:
 source "$HOME/.shell/env"
