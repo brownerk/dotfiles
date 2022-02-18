@@ -27,7 +27,7 @@ if [[ $(which python) != *"dotfiles/venv"* ]]; then
     exit
 fi
 
-git submodule update --init --recursive --remote
+git submodule update --init --recursive
 
 
 OS_DIR="os/macos"

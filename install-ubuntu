@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 
+sudo apt list | grep python-apt -q && sudo apt install -y python-apt
+
 set -e
 
 BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 cd "${BASE_DIR}"
-git submodule update --init --recursive --remote
-
+git submodule update --init --recursive
 
 OS_DIR="os/ubuntu"
 PROFILE="${OS_DIR}/profile"
