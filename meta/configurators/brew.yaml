@@ -6,3 +6,5 @@
 
 - brewfile:
     file: os/macos/Brewfile
+    sudo: homebrew
+    no-lock:
